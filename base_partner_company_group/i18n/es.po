@@ -21,32 +21,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_partner_company_group.field_res_users__company_group_id
 #: model_terms:ir.ui.view,arch_db:base_partner_company_group.view_res_partner_filter
 msgid "Company Group"
-msgstr "Grupo compa????a"
+msgstr "Grupo compañía"
 
 #. module: base_partner_company_group
 #: model:ir.actions.act_window,name:base_partner_company_group.action_open_group_members
 #: model:ir.model.fields,field_description:base_partner_company_group.field_res_partner__company_group_member_ids
 #: model:ir.model.fields,field_description:base_partner_company_group.field_res_users__company_group_member_ids
 msgid "Company group members"
-msgstr "Miembros del grupo de la compa????a"
-
-#. module: base_partner_company_group
-#: model:ir.model.fields,field_description:base_partner_company_group.field_res_partner__display_name
-msgid "Display Name"
-msgstr ""
+msgstr "Miembros del grupo de la compañía"
 
 #. module: base_partner_company_group
 #: model:ir.model,name:base_partner_company_group.model_res_partner
-msgid "Fake Model"
-msgstr ""
-
-#. module: base_partner_company_group
-#: model:ir.model.fields,field_description:base_partner_company_group.field_res_partner__id
-msgid "ID"
-msgstr ""
-
-#~ msgid "Contact"
-#~ msgstr "Contacto"
+msgid "Contact"
+msgstr "Contacto"
 
 #~ msgid "Company group"
-#~ msgstr "Grupo compa????a"
+#~ msgstr "Grupo compañía"
