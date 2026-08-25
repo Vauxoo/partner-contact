@@ -12,10 +12,11 @@ class ResPartner(models.Model):
 
     @api.model
     def _default_company_id(self):
-        """Return False for other tests or if creating a company."""
+        """Return False for other tests, module data or if creating a company."""
         context = self.env.context
         if (
             context.get("creating_from_company")
+            or context.get("install_mode")
             or config["test_enable"]
             and not context.get("test_partner_company_default")
         ):

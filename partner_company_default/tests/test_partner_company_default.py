@@ -44,3 +44,13 @@ class TestPartnerCompanyDefault(common.TransactionCase):
             .create({"name": "Test Partner 2"})
         )
         self.assertEqual(partner.company_id, company_fr)
+
+    def test_partner_company_default_install_mode(self):
+        """Check company of a partner created while loading the data of a module."""
+        partner = (
+            self.env["res.partner"]
+            .with_user(self.user.id)
+            .with_context(test_partner_company_default=True, install_mode=True)
+            .create({"name": "Test Partner 3"})
+        )
+        self.assertFalse(partner.company_id)
